@@ -9,18 +9,16 @@ ReadFile::ReadFile(const char* file_name)
    _eof = false;
 }
 
-ReadFile::~ReadFile(ReadFile* rf)
+ReadFile::~ReadFile()
 {
-   close(rf);
-   delete rf;
 }
 
-bool ReadFile::eof(ReadFile* rf)
+bool ReadFile::eof()
 {
    return _eof;
 }
 
-void ReadFile::close(ReadFile* rf)
+void ReadFile::close()
 {
    if (!closed)
    {
@@ -29,7 +27,7 @@ void ReadFile::close(ReadFile* rf)
    }
 }
 
-String* ReadFile::readLine(ReadFile* rf)
+String* ReadFile::readLine()
 {
    if (closed) return NULL;
    if (_eof) return NULL;

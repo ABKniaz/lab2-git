@@ -12,13 +12,13 @@ struct ReadFile
    ifstream input_file;
    bool _eof;
    bool closed;
-   void close(ReadFile* rf);
    
    public:
    ReadFile(const char* file_name);
    ~ReadFile();
-   bool eof(ReadFile* rf);
-   String* readLine(ReadFile* rf);
+   bool eof();
+   void close();
+   String* readLine();
 };
 
 #endif
