@@ -5,7 +5,7 @@
 
 #include <fstream>
 using namespace std;
-//last edit by Anthony
+//Last edit by Anthony
 struct ReadFile
 {
    private:
