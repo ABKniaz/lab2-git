@@ -1,11 +1,7 @@
 #include "ReadFile.h"
 #include <iostream>
 #include <string>
-<<<<<<< HEAD
-//Anthony and Hussian
-=======
 //test if this works
->>>>>>> 2800b8cb668533d8fc7269e5f188a1b2a33bbb4e
 ReadFile::ReadFile(const char* file_name)
 {
    input_file.open(file_name);
