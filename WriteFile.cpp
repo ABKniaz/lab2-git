@@ -3,8 +3,8 @@
 
 WriteFile::WriteFile(const char* file_name)
 {
-   wf->output_file.open(file_name);
-   wf->closed = false;
+   output_file.open(file_name);
+   closed = false;
 }
 WriteFile::~WriteFile()
 {
@@ -12,17 +12,17 @@ WriteFile::~WriteFile()
 
 void WriteFile::close()
 {
-   if (!wf->closed)
+   if (!closed)
    {
-      wf->output_file.close();
-      wf->closed = true;
+      output_file.close();
+      closed = true;
    }
 }
 
 void WriteFile::writeLine(String* line)
 {
-   if (!wf->closed && line->length() > 0)
+   if (!closed && line->length() > 0)
    {
-      wf->output_file << line->getText() << endl;
+      output_file << line->getText() << endl;
    }
 }
