@@ -13,7 +13,7 @@ using namespace std;
  * It also initializes the _eof and closed variables
  * The original String is not affected
  */
-struct ReadFile
+class ReadFile
 {
    private:
    ifstream input_file;

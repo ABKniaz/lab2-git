@@ -1,7 +1,7 @@
 #include "ReadFile.h"
 #include <iostream>
 #include <string>
-
+git 
 ReadFile::ReadFile(const char* file_name)
 {
    input_file.open(file_name);
